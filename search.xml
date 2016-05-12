@@ -4,18 +4,18 @@
   
     
     <entry>
-      <title><![CDATA[new]]></title>
-      <url>http://yoursite.com/2016/05/12/new/</url>
-      <content type="html"><![CDATA[<p>测试2 测试2 这只是测试</p>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[Text]]></title>
       <url>http://yoursite.com/2016/05/12/Text/</url>
       <content type="html"><![CDATA[<p>#xie</p>
 <p>测试一下 text text</p>
 <p>666</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[new]]></title>
+      <url>http://yoursite.com/2016/05/12/new/</url>
+      <content type="html"><![CDATA[<p>测试2 测试2 这只是测试</p>
 ]]></content>
     </entry>
     
