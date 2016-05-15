@@ -84,22 +84,28 @@
 
 
 
-<meta name="description" content="#xie
-测试一下 text text
-666">
+<meta name="description" content="最近在学习Swift,这里浅谈一下Swift中非常重要的知识点 可选型(Optional)
+
+虽说Swift跟Java类似,但还是有本质的区别.Java属于弱类型语言,可以随便拼接,判空.但是Swift不行,Swift是强类型语言,非常注重代码的安全性,是不可以随便给对象或属性赋值nil.
+但是我还是想判空怎么办?这时候就需要用到 可选型(Optional).
+##可选型(Optional)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Text">
-<meta property="og:url" content="http://yoursite.com/2016/05/12/Text/index.html">
+<meta property="og:title" content="浅谈 Swift 可选型(Optional)">
+<meta property="og:url" content="http://yoursite.com/2015/09/16/浅谈Swift可选型/index.html">
 <meta property="og:site_name" content="xie's 佳">
-<meta property="og:description" content="#xie
-测试一下 text text
-666">
-<meta property="og:updated_time" content="2016-05-11T20:14:58.000Z">
+<meta property="og:description" content="最近在学习Swift,这里浅谈一下Swift中非常重要的知识点 可选型(Optional)
+
+虽说Swift跟Java类似,但还是有本质的区别.Java属于弱类型语言,可以随便拼接,判空.但是Swift不行,Swift是强类型语言,非常注重代码的安全性,是不可以随便给对象或属性赋值nil.
+但是我还是想判空怎么办?这时候就需要用到 可选型(Optional).
+##可选型(Optional)">
+<meta property="og:updated_time" content="2016-05-15T18:55:20.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Text">
-<meta name="twitter:description" content="#xie
-测试一下 text text
-666">
+<meta name="twitter:title" content="浅谈 Swift 可选型(Optional)">
+<meta name="twitter:description" content="最近在学习Swift,这里浅谈一下Swift中非常重要的知识点 可选型(Optional)
+
+虽说Swift跟Java类似,但还是有本质的区别.Java属于弱类型语言,可以随便拼接,判空.但是Swift不行,Swift是强类型语言,非常注重代码的安全性,是不可以随便给对象或属性赋值nil.
+但是我还是想判空怎么办?这时候就需要用到 可选型(Optional).
+##可选型(Optional)">
 
 
 
@@ -117,7 +123,7 @@
   };
 </script>
 
-  <title> Text | xie's 佳 </title>
+  <title> 浅谈 Swift 可选型(Optional) | xie's 佳 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -277,7 +283,7 @@
             
             
               
-                Text
+                浅谈 Swift 可选型(Optional)
               
             
           </h1>
@@ -289,8 +295,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-12T04:13:33+08:00" content="2016-05-12">
-              2016-05-12
+            <time itemprop="dateCreated" datetime="2015-09-16T01:39:06+08:00" content="2015-09-16">
+              2015-09-16
             </time>
           </span>
 
@@ -300,8 +306,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/05/12/Text/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/12/Text/" itemprop="commentsCount"></span>
+                <a href="/2015/09/16/浅谈Swift可选型/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/16/浅谈Swift可选型/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -311,7 +317,7 @@
 
           
           
-             <span id="/2016/05/12/Text/" class="leancloud_visitors" data-flag-title="Text">
+             <span id="/2015/09/16/浅谈Swift可选型/" class="leancloud_visitors" data-flag-title="浅谈 Swift 可选型(Optional)">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -333,9 +339,41 @@
       
 
       
-        <p>#xie</p>
-<p>测试一下 text text</p>
-<p>666</p>
+        <ul>
+<li><p>最近在学习Swift,这里浅谈一下Swift中非常重要的知识点 可选型(Optional)</p>
+</li>
+<li><p>虽说Swift跟Java类似,但还是有本质的区别.<br>Java属于弱类型语言,可以随便拼接,判空.但是Swift不行,Swift是强类型语言,非常注重代码的安全性,是不可以随便给对象或属性赋值nil.</p>
+<p>但是我还是想判空怎么办?这时候就需要用到 可选型(Optional).</p>
+<p>##可选型(Optional)</p>
+  <pre><code>public enum Optional< T> {
+  case None
+  case Some(T)
+  }</code></pre>
+
+<p>  可选型是个泛型，而Optional又是个枚举 enum，Optional可以是 None，也可以是Some(T)</p>
+<p>##声明可选型</p>
+<p>显式声明<br>“?” 是 Optional<t> 的简写形式.  </t></p>
+<pre><code>var name:Optional<string> = "xie"
+var blog:String? = "xie520.github.io"  
+// 这里可以判断
+if name != nil {
+  print(name)
+}
+print(blog)  
+// 输出
+Optional("sunfusheng")
+Optional("sunfusheng.com")</string></code></pre>
+
+
+</li>
+</ul>
+<p>  隐式声明<br>  “!” 是 ImplicitlyUnwrappedOptional<t> 的简写形式<br>  <pre><code>var name1:ImplicitlyUnwrappedOptional<string> = “xie”<br>var blog1:String! = “xie520.github.io”<br>print(name1)<br>print(blog1)<br>// 输出<br>xie<br>xie520.github.io</string></code></pre></t></p>
+<p>  ##可选型解包<br>  本文开头说了,Swift属于强类型语言,所以Swift 中 String 和 Optional<string> 不是一个类型的,String 类型 和 Optional<string> 类型数据拼接肯定报错的,所以我们需要解包后使用  </string></string></p>
+<p>  ###强制解包<br>  <pre><code>// 显式声明的可选型变量后加 “!” 强制解包<br>var name:String? = “xie”<br>“My name is “ + name!<br>// 不建议使用强制解包，下面就会报错<br>name = nil<br>“My name is “ + name!<br>// 隐式声明的可选型不需要解包，同样可能因为 nil 报错<br>var blog:String! = “xie520.github.io”<br>// blog = nil<br>“My blog is “ + blog</code></pre></p>
+<p>  ###if let 解包可选型<br>  <pre><code>// 可以使用相同的变量名解包<br>if let errorCode = errorCode {<br>    print(errorCode)<br>}<br>// if let 可以同时解包多个变量，同样可以使用控制转移的条件<br>if let errorCode = errorCode, errorMessage = errorMessage where errorCode == “404” {<br>    print(“Page not found”)<br>} else {<br>    print(“No error”)<br>}</code></pre></p>
+<p>  ##可选链 (Optional Chaining)<br>  <pre><code>// 把我的名字全变成大写字母<br>var name:String? = “xie”<br>if let name = name {<br>    print(name.uppercaseString)<br>}<br>// 输出<br>XIE<br>// 更优雅地使用可选链实现<br>print(name?.uppercaseString)<br>// 输出<br>XIE<br>// 如果 name = nil 就不会继续执行 uppercaseString<br>name = nil<br>print(name?.uppercaseString)<br>// 输出<br>nil</code></pre></p>
+<p>  当然也可以使用强制解包方式使用可选链，当然不建议使用，除非你确保它不为 nil<br>  <pre><code>print(name!.uppercaseString)<br>// 输出<br>XIE<br>// 编译报错<br>name = nil<br>print(name!.uppercaseString)</code></pre><br>要掌握Swift, 可选型 是必须要理解的知识点  </p>
+<p>  在此感谢<a href="http://sunfusheng.com" target="_blank" rel="external">孙福生</a>同志的指导</p>
 
       
     </div>
@@ -367,10 +405,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/05/12/Text/"
-     data-title="Text"
+        <div class="ds-share flat" data-thread-key="2015/09/16/浅谈Swift可选型/"
+     data-title="浅谈 Swift 可选型(Optional)"
      data-content=""
-     data-url="http://yoursite.com/2016/05/12/Text/">
+     data-url="http://yoursite.com/2015/09/16/浅谈Swift可选型/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -397,8 +435,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/05/12/Text/"
-           data-title="Text" data-url="http://yoursite.com/2016/05/12/Text/">
+      <div class="ds-thread" data-thread-key="2015/09/16/浅谈Swift可选型/"
+           data-title="浅谈 Swift 可选型(Optional)" data-url="http://yoursite.com/2015/09/16/浅谈Swift可选型/">
       </div>
     
   </div>
