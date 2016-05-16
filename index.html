@@ -337,9 +337,10 @@
 <p>虽说Swift跟Java类似,但还是有本质的区别.<br>Java属于弱类型语言,可以随便拼接,判空.但是Swift不行,Swift是强类型语言,非常注重代码的安全性,是不可以随便给对象或属性赋值nil.</p>
 <p>  但是我还是想判空怎么办?这时候就需要用到 可选型(Optional).  </p>
 <p>##可选型(Optional)</p>
-<pre><code class="python">    public enum Optional&lt; T&gt; {
-    case <span class="keyword">None</span>
-case Some(T)
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public enum Optional&lt; T&gt; &#123;</span><br><span class="line">case <span class="keyword">None</span></span><br><span class="line">case Some(T)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code class="JavaScript">public enum Optional&lt; T&gt; {
+<span class="keyword">case</span> None
+<span class="keyword">case</span> Some(T)
 }
 </code></pre>
 <p>   可选型是个泛型，而Optional又是个枚举 enum，Optional可以是 None，也可以是Some(T)    </p>
