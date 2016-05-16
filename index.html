@@ -336,9 +336,9 @@
             <p>最近在学习Swift,这里浅谈一下Swift中非常重要的知识点 可选型(Optional)</p>
 <p>虽说Swift跟Java类似,但还是有本质的区别.<br>Java属于弱类型语言,可以随便拼接,判空.但是Swift不行,Swift是强类型语言,非常注重代码的安全性,是不可以随便给对象或属性赋值nil.</p>
 <p>  但是我还是想判空怎么办?这时候就需要用到 可选型(Optional).  </p>
-<h2 id="可选型-Optional"><a href="#可选型-Optional" class="headerlink" title="可选型(Optional)"></a>可选型(Optional)</h2><pre><code class="JavaScript">public enum Optional&lt; T&gt; {
-<span class="keyword">case</span> None
-<span class="keyword">case</span> Some(T)
+<h2 id="可选型-Optional"><a href="#可选型-Optional" class="headerlink" title="可选型(Optional)"></a>可选型(Optional)</h2><pre><code class="Swift"><span class="keyword">public</span> <span class="class"><span class="keyword">enum</span> <span class="title">Optional</span>&lt; <span class="title">T</span>&gt; </span>{
+<span class="keyword">case</span> <span class="type">None</span>
+<span class="keyword">case</span> <span class="type">Some</span>(<span class="type">T</span>)
 }
 </code></pre>
 <p>   可选型是个泛型，而Optional又是个枚举 enum，Optional可以是 None，也可以是Some(T)    </p>
