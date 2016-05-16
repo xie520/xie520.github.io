@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://yoursite.com/tags/index.html</loc>
+    
+    <lastmod>2016-05-16T14:52:03.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2016-05-16T14:51:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2015/09/16/%E6%B5%85%E8%B0%88Swift%E5%8F%AF%E9%80%89%E5%9E%8B/</loc>
+    
+    <lastmod>2016-05-16T08:51:57.000Z</lastmod>
+    
+  </url>
+  
+</urlset>
