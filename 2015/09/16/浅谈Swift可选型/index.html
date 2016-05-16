@@ -96,7 +96,7 @@
 虽说Swift跟Java类似,但还是有本质的区别.Java属于弱类型语言,可以随便拼接,判空.但是Swift不行,Swift是强类型语言,非常注重代码的安全性,是不可以随便给对象或属性赋值nil.
   但是我还是想判空怎么办?这时候就需要用到 可选型(Optional).  
 可选型(Optional)pu">
-<meta property="og:updated_time" content="2016-05-16T02:24:55.000Z">
+<meta property="og:updated_time" content="2016-05-16T07:37:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅谈 Swift 可选型(Optional)">
 <meta name="twitter:description" content="最近在学习Swift,这里浅谈一下Swift中非常重要的知识点 可选型(Optional)
@@ -378,7 +378,7 @@ print(blog1)
 // 输出  
 xie  
 xie520.github.io
-</code></pre><h2 id="可选型解包"><a href="#可选型解包" class="headerlink" title="可选型解包"></a>可选型解包</h2><p>  本文开头说了,Swift属于强类型语言,所以Swift 中 String 和 Optional<string> 不是一个类型的,String 类型 和 Optional<string> 类型数据拼接肯定报错的,所以我们需要解包后使用  </string></string></p>
+</code></pre><h2 id="可选型解包"><a href="#可选型解包" class="headerlink" title="可选型解包"></a>可选型解包</h2><p>  本文开头说了,Swift属于强类型语言,所以Swift 中 String 和 Optional&lt; String&gt; 不是一个类型的,String 类型 和 Optional&lt; String&gt; 类型数据拼接肯定报错的,所以我们需要解包后使用  </p>
 <h3 id="强制解包"><a href="#强制解包" class="headerlink" title="强制解包"></a>强制解包</h3><pre><code>// 显式声明的可选型变量后加 &quot;!&quot; 强制解包
 var name:String? = &quot;xie&quot;
 &quot;My name is &quot; + name!  
