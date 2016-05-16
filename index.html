@@ -342,12 +342,22 @@
  case Some(T)
  }</code></pre>
 
-<p>   可选型是个泛型，而Optional又是个枚举 enum，Optional可以是 None，也可以是Some(T)</p>
+<p>   可选型是个泛型，而Optional又是个枚举 enum，Optional可以是 None，也可以是Some(T)    </p>
 <p>##声明可选型</p>
-<p>  显式声明<br>“?” 是 Optional<t> 的简写形式.<br>  <pre><code>var name:Optional<string> = “xie”<br>var blog:String? = “xie520.github.io”<br>// 这里可以判断<br>if name != nil {<br>    print(name)<br>}<br>print(blog)<br>// 输出<br>Optional(“sunfusheng”)<br>Optional(“sunfusheng.com”)</string></code></pre></t></p>
-<p>   隐式声明<br>   “!” 是 ImplicitlyUnwrappedOptional<t> 的简写形式<br>    <pre><code>var name1:ImplicitlyUnwrappedOptional<string> = “xie”<br> var blog1:String! = “xie520.github.io”  </string></code></pre></t></p>
-<p> print(name1)<br> print(blog1)  </p>
-<p> // 输出<br> xie<br> xie520.github.io</p>
+<p>  显式声明<br>“?” 是 Optional<t> 的简写形式.  </t></p>
+<pre><code>var name:Optional&lt;String&gt; = &quot;xie&quot;
+var blog:String? = &quot;xie520.github.io&quot;  
+
+// 这里可以判断
+if name != nil {
+print(name)
+}
+print(blog)  
+
+// 输出
+Optional(&quot;sunfusheng&quot;)
+Optional(&quot;sunfusheng.com&quot;)
+</code></pre><p>   隐式声明<br>   “!” 是 ImplicitlyUnwrappedOptional<t> 的简写形式<br>    <pre><code>var name1:ImplicitlyUnwrappedOptional<string> = “xie”<br> var blog1:String! = “xie520.github.io”<br> print(name1)<br> print(blog1)<br> // 输出<br> xie<br> xie520.github.io</string></code></pre></t></p>
 <p>##可选型解包<br>  本文开头说了,Swift属于强类型语言,所以Swift 中 String 和 Optional<string> 不是一个类型的,String 类型 和 Optional<string> 类型数据拼接肯定报错的,所以我们需要解包后使用  </string></string></p>
 <p>###强制解包<br>  <pre><code>// 显式声明的可选型变量后加 “!” 强制解包<br>var name:String? = “xie”<br>“My name is “ + name!<br>// 不建议使用强制解包，下面就会报错<br>name = nil<br>“My name is “ + name!<br>// 隐式声明的可选型不需要解包，同样可能因为 nil 报错<br>var blog:String! = “xie520.github.io”<br>// blog = nil<br>“My blog is “ + blog</code></pre></p>
 <p>###if let 解包可选型<br>  <pre><code>// 可以使用相同的变量名解包<br>if let errorCode = errorCode {<br>    print(errorCode)<br>}<br>// if let 可以同时解包多个变量，同样可以使用控制转移的条件<br>if let errorCode = errorCode, errorMessage = errorMessage where errorCode == “404” {<br>    print(“Page not found”)<br>} else {<br>    print(“No error”)<br>}</code></pre></p>
