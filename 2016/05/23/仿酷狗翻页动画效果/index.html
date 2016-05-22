@@ -70,7 +70,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="技术," />
 
 
 
@@ -86,15 +86,39 @@
 
 
 
-<meta name="description" content="嘿 ，时间不多了">
-<meta property="og:type" content="website">
-<meta property="og:title" content="xie's 佳">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="###转帖请注明出处,谢谢^
+最近一直用酷狗音乐app听歌,发现其歌曲详情页的翻页动画效果很有操作感,于是尝试去实现它.
+##效果图
+
+1
+##分析
+如效果图,猜想是在view上添加平移手势.然后计算出水平方向移动的x值与角度之间的关系,求出实时的角度,最后需用到核心动画,让view进行实时的旋转.
+实现这效果比较难的地方就是偏移量x的值与旋转角度之间的关系,经过一系列的计算与测试博主最终得出了它">
+<meta property="og:type" content="article">
+<meta property="og:title" content="仿酷狗音乐app翻页动画效果">
+<meta property="og:url" content="http://yoursite.com/2016/05/23/仿酷狗翻页动画效果/index.html">
 <meta property="og:site_name" content="xie's 佳">
-<meta property="og:description" content="嘿 ，时间不多了">
+<meta property="og:description" content="###转帖请注明出处,谢谢^
+最近一直用酷狗音乐app听歌,发现其歌曲详情页的翻页动画效果很有操作感,于是尝试去实现它.
+##效果图
+
+1
+##分析
+如效果图,猜想是在view上添加平移手势.然后计算出水平方向移动的x值与角度之间的关系,求出实时的角度,最后需用到核心动画,让view进行实时的旋转.
+实现这效果比较难的地方就是偏移量x的值与旋转角度之间的关系,经过一系列的计算与测试博主最终得出了它">
+<meta property="og:image" content="http://i2.buimg.com/87715d9e6b16eea3.gif">
+<meta property="og:updated_time" content="2016-05-22T19:51:28.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="xie's 佳">
-<meta name="twitter:description" content="嘿 ，时间不多了">
+<meta name="twitter:title" content="仿酷狗音乐app翻页动画效果">
+<meta name="twitter:description" content="###转帖请注明出处,谢谢^
+最近一直用酷狗音乐app听歌,发现其歌曲详情页的翻页动画效果很有操作感,于是尝试去实现它.
+##效果图
+
+1
+##分析
+如效果图,猜想是在view上添加平移手势.然后计算出水平方向移动的x值与角度之间的关系,求出实时的角度,最后需用到核心动画,让view进行实时的旋转.
+实现这效果比较难的地方就是偏移量x的值与旋转角度之间的关系,经过一系列的计算与测试博主最终得出了它">
+<meta name="twitter:image" content="http://i2.buimg.com/87715d9e6b16eea3.gif">
 
 
 
@@ -112,7 +136,7 @@
   };
 </script>
 
-  <title> xie's 佳 </title>
+  <title> 仿酷狗音乐app翻页动画效果 | xie's 佳 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -143,9 +167,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -255,9 +277,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -277,10 +299,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/05/23/仿酷狗翻页动画效果/" itemprop="url">
-                  仿酷狗音乐app翻页动画效果
-                </a>
+                仿酷狗音乐app翻页动画效果
               
             
           </h1>
@@ -336,9 +355,7 @@
       
 
       
-        
-          
-            <p>###转帖请注明出处,谢谢^</p>
+        <p>###转帖请注明出处,谢谢^</p>
 <p>最近一直用酷狗音乐app听歌,发现其歌曲详情页的翻页动画效果很有操作感,于是尝试去实现它.</p>
 <p>##效果图</p>
 <p><img src="http://i2.buimg.com/87715d9e6b16eea3.gif" alt=""></p>
@@ -351,160 +368,77 @@
 <p>欢迎转载,请注明出处!</p>
 <p>最后,还有什么疑问的,请留言吧^</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/09/16/浅谈Swift可选型/" itemprop="url">
-                  浅谈 Swift 可选型(Optional)
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-09-16T01:39:06+08:00" content="2015-09-16">
-              2015-09-16
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/09/16/浅谈Swift可选型/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/16/浅谈Swift可选型/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2015/09/16/浅谈Swift可选型/" class="leancloud_visitors" data-flag-title="浅谈 Swift 可选型(Optional)">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
+            <a href="/tags/技术/" rel="tag">#技术</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>最近在学习Swift,这里浅谈一下Swift中非常重要的知识点 可选型(Optional)</p>
-<p>虽说Swift跟Java类似,但还是有本质的区别.<br>Java属于弱类型语言,可以随便拼接,判空.但是Swift不行,Swift是强类型语言,非常注重代码的安全性,是不可以随便给对象或属性赋值nil.</p>
-<p>  但是我还是想判空怎么办?这时候就需要用到 可选型(Optional).  </p>
-<h2 id="可选型-Optional"><a href="#可选型-Optional" class="headerlink" title="可选型(Optional)"></a>可选型(Optional)</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">enum</span> <span class="title">Optional</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line"><span class="keyword">case</span> <span class="type">None</span></span><br><span class="line"><span class="keyword">case</span> <span class="type">Some</span>(<span class="type">T</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>可选型是个泛型，而Optional又是个枚举 enum，Optional可以是 None，也可以是Some(T)    </p>
-<h2 id="声明可选型"><a href="#声明可选型" class="headerlink" title="声明可选型"></a>声明可选型</h2><h3 id="显式声明"><a href="#显式声明" class="headerlink" title="显式声明"></a>显式声明</h3><p>“?” 是 Optional<t> 的简写形式.<br><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> name:<span class="type">Optional</span>&lt;<span class="type">String</span>&gt; = <span class="string">"xie"</span></span><br><span class="line"><span class="keyword">var</span> blog:<span class="type">String</span>? = <span class="string">"xie520.github.io"</span>  </span><br><span class="line"> </span><br><span class="line"><span class="comment">// 这里可以判断</span></span><br><span class="line"><span class="keyword">if</span> name != <span class="literal">nil</span> &#123;</span><br><span class="line"><span class="built_in">print</span>(name)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">print</span>(blog)   </span><br><span class="line"> </span><br><span class="line"><span class="comment">// 输出</span></span><br><span class="line"><span class="type">Optional</span>(<span class="string">"xie"</span>)</span><br><span class="line"><span class="type">Optional</span>(<span class="string">"xie520.github.io"</span>)</span><br></pre></td></tr></table></figure></t></p>
-<h3 id="隐式声明"><a href="#隐式声明" class="headerlink" title="隐式声明"></a>隐式声明</h3><p>“!” 是 ImplicitlyUnwrappedOptional<t> 的简写形式<br><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> name1:<span class="type">ImplicitlyUnwrappedOptional</span>&lt;<span class="type">String</span>&gt; = <span class="string">"xie"</span>  </span><br><span class="line"><span class="keyword">var</span> blog1:<span class="type">String</span>! = <span class="string">"xie520.github.io"</span>  </span><br><span class="line">    </span><br><span class="line"><span class="built_in">print</span>(name1)  </span><br><span class="line"><span class="built_in">print</span>(blog1)  </span><br><span class="line">    </span><br><span class="line"><span class="comment">// 输出  </span></span><br><span class="line">xie  </span><br><span class="line">xie520.github.io</span><br></pre></td></tr></table></figure>  </t></p>
-<h2 id="可选型解包"><a href="#可选型解包" class="headerlink" title="可选型解包"></a>可选型解包</h2><p>  本文开头说了,Swift属于强类型语言,所以Swift 中 String 和 Optional&lt; String&gt; 不是一个类型的,String 类型 和 Optional&lt; String&gt; 类型数据拼接肯定报错的,所以我们需要解包后使用  </p>
-<h3 id="强制解包"><a href="#强制解包" class="headerlink" title="强制解包"></a>强制解包</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 显式声明的可选型变量后加 "!" 强制解包</span></span><br><span class="line"><span class="keyword">var</span> name:<span class="type">String</span>? = <span class="string">"xie"</span></span><br><span class="line"><span class="string">"My name is "</span> + name!  </span><br><span class="line">    </span><br><span class="line"><span class="comment">// 不建议使用强制解包，下面就会报错</span></span><br><span class="line">name = <span class="literal">nil</span></span><br><span class="line"><span class="string">"My name is "</span> + name!  </span><br><span class="line">    </span><br><span class="line"><span class="comment">// 隐式声明的可选型不需要解包，同样可能因为 nil 报错</span></span><br><span class="line"><span class="keyword">var</span> blog:<span class="type">String</span>! = <span class="string">"xie520.github.io"</span></span><br><span class="line"><span class="comment">// blog = nil</span></span><br><span class="line"><span class="string">"My blog is "</span> + blog</span><br></pre></td></tr></table></figure>
-<h3 id="if-let-解包可选型"><a href="#if-let-解包可选型" class="headerlink" title="if let 解包可选型"></a>if let 解包可选型</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 可以使用相同的变量名解包</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">let</span> errorCode = errorCode &#123;</span><br><span class="line"><span class="built_in">print</span>(errorCode)</span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line"><span class="comment">// if let 可以同时解包多个变量，同样可以使用控制转移的条件</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">let</span> errorCode = errorCode, errorMessage = errorMessage <span class="keyword">where</span> errorCode==<span class="string">"404"</span> &#123;</span><br><span class="line">    </span><br><span class="line"><span class="built_in">print</span>(<span class="string">"Page not found"</span>)</span><br><span class="line">    </span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    </span><br><span class="line"><span class="built_in">print</span>(<span class="string">"No error"</span>)</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="可选链-Optional-Chaining"><a href="#可选链-Optional-Chaining" class="headerlink" title="可选链 (Optional Chaining)"></a>可选链 (Optional Chaining)</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 把我的名字全变成大写字母</span></span><br><span class="line"><span class="keyword">var</span> name:<span class="type">String</span>? = <span class="string">"xie"</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">let</span> name = name &#123;</span><br><span class="line"><span class="built_in">print</span>(name.uppercaseString)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 输出</span></span><br><span class="line"><span class="type">XIE</span>  </span><br><span class="line"></span><br><span class="line"><span class="comment">// 更优雅地使用可选链实现</span></span><br><span class="line"><span class="built_in">print</span>(name?.uppercaseString)</span><br><span class="line"><span class="comment">// 输出</span></span><br><span class="line"><span class="type">XIE</span>  </span><br><span class="line"></span><br><span class="line"><span class="comment">// 如果 name = nil 就不会继续执行 uppercaseString</span></span><br><span class="line">name = <span class="literal">nil</span></span><br><span class="line"><span class="built_in">print</span>(name?.uppercaseString)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 输出</span></span><br><span class="line"><span class="literal">nil</span></span><br></pre></td></tr></table></figure>
-<p>当然也可以使用强制解包方式使用可选链，当然不建议使用，除非你确保它不为 nil  </p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(name!.uppercaseString)</span><br><span class="line"><span class="comment">// 输出</span></span><br><span class="line"><span class="type">XIE</span>  </span><br><span class="line">    </span><br><span class="line"><span class="comment">// 编译报错</span></span><br><span class="line">name = <span class="literal">nil</span></span><br><span class="line"><span class="built_in">print</span>(name!.uppercaseString)</span><br></pre></td></tr></table></figure>
-<p>要掌握Swift, 可选型 是必须要理解的知识点  </p>
-<p>  最后,感谢 <a href="http://sunfusheng.com" target="_blank" rel="external">孙福生</a> 同志的指导</p>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/09/16/浅谈Swift可选型/" rel="next" title="浅谈 Swift 可选型(Optional)">
+                <i class="fa fa-chevron-left"></i> 浅谈 Swift 可选型(Optional)
+              </a>
+            
+          </div>
 
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/05/23/仿酷狗翻页动画效果/"
+     data-title="仿酷狗音乐app翻页动画效果"
+     data-content=""
+     data-url="http://yoursite.com/2016/05/23/仿酷狗翻页动画效果/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
 
 
           </div>
@@ -512,6 +446,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/05/23/仿酷狗翻页动画效果/"
+           data-title="仿酷狗音乐app翻页动画效果" data-url="http://yoursite.com/2016/05/23/仿酷狗翻页动画效果/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -531,8 +473,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -586,6 +537,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -682,6 +644,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
