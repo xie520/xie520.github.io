@@ -6,7 +6,7 @@
     <entry>
       <title><![CDATA[iOS仿酷狗音乐App翻页动画效果]]></title>
       <url>http://yoursite.com/2016/05/23/%E4%BB%BF%E9%85%B7%E7%8B%97%E7%BF%BB%E9%A1%B5%E5%8A%A8%E7%94%BB%E6%95%88%E6%9E%9C/</url>
-      <content type="html"><![CDATA[<p>转载请注明出处,谢谢^<br>最近一直用酷狗音乐app听歌,发现其歌曲详情页的翻页动画效果很有操作感<br>于是尝试去实现它.</p>
+      <content type="html"><![CDATA[<p>最近一直用酷狗音乐app听歌,发现其歌曲详情页的翻页动画效果很有操作感<br>于是尝试去实现它.</p>
 <h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p><img src="http://i2.buimg.com/87715d9e6b16eea3.gif" alt=""></p>
 <h2 id="分析猜想"><a href="#分析猜想" class="headerlink" title="分析猜想"></a>分析猜想</h2><p>如效果图,猜想是在view上添加平移手势.然后计算出水平方向移动的x值与角度之间的关系,求出实时的角度,最后需用到核心动画,让view进行实时的旋转.</p>
 <p>实现这效果比较难的地方就是偏移量x的值与旋转角度之间的关系,经过一系列的计算与测试博主最终得出了它们的关系公式,由于比较抽象这里我也不过多的详细解释,直接上代码.</p>
